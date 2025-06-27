@@ -1,3 +1,13 @@
-* {
-    font-family: 'Inter', sans-serif;
+:root {
+  --color-beige: #d9d7c7;
+  --color-warm-sand: #e8e4d9;
+  --color-dusty-olive: #918c7f;
+  --color-deep-taupe: #4a4238;
+  --color-dark-espresso: #2e2b27;
+}
+
+body {
+  background-color: var(--color-beige);
+  color: var(--color-dark-espresso);
+  font-family: 'Inter', sans-serif;
 }
