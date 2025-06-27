@@ -1,23 +1,23 @@
 .hero {
   width: 100%;
+  height: 100vh;
   background: var(--background-gradient);
   display: flex;
-  justify-content: flex-start;  /* align top */
-  align-items: flex-start;      /* align top */
-  padding: 3rem 2rem 2rem 2rem;
+  justify-content: center;      
   text-align: center;
   color: var(--text-color-primary);
-  overflow-y: auto;
   box-sizing: border-box;
   font-family: var(--font-family);
+  transform: translateY(-50%, -50%);
 }
 
 .hero-content {
   max-width: 800px;
-  margin: 0 auto;
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .scale {
@@ -73,7 +73,7 @@ h2 {
   user-select: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero {
     padding: 2rem 1rem 1rem 1rem;
   }
