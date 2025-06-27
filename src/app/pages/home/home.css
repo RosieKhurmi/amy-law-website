@@ -1,0 +1,109 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: var(--background-gradient);
+  display: flex;
+  justify-content: flex-start;  /* align top */
+  align-items: flex-start;      /* align top */
+  padding: 3rem 2rem 2rem 2rem;
+  text-align: center;
+  color: var(--text-color-primary);
+  overflow-y: auto;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.scale {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  user-select: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--text-color-secondary);
+  user-select: none;
+}
+
+.quote {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  line-height: 1.4;
+  padding: 0 0.5rem;
+  color: var(--text-color-muted);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.message {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem;
+  color: var(--text-color-primary);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signature {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .hero-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .quote,
+  .message {
+    font-size: 0.95rem;
+    padding: 0 0.25rem;
+  }
+
+  .signature {
+    font-size: 1rem;
+  }
+
+  .scale {
+    width: 70px;
+  }
+}

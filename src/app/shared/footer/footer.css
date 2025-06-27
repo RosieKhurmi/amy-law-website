@@ -1,4 +1,36 @@
 .footer {
-    background-color: aquamarine;
-    padding: 1rem 2rem
+  color: #0a0908;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.footer a {
+  color: #0a0908;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #5e503f;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer p {
+    margin: 0;
+  }
 }
